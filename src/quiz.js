@@ -35,10 +35,7 @@ class Quiz {
     }
 
     hasEnded(){
-        if(this.currentQuestionIndex < this.questions.length)
-            return false;
-        if(this.currentQuestionIndex === this.questions.length)
-            return true;
+        return this.currentQuestionIndex === this.questions.length;
     }
     filterQuestionsByDifficulty(difficulty){
         if( difficulty >= 1  && difficulty <= 3 )
