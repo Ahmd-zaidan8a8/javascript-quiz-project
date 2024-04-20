@@ -14,6 +14,19 @@ document.addEventListener("DOMContentLoaded", () => {
   // End view elements
   const resultContainer = document.querySelector("#result");
 
+  const restartButton = document.querySelector('#restartButton');
+
+  restartButton.addEventListener('click' , () => {
+    quizView.style.display = "block";
+    endView.style.display = "none";
+    quiz.currentQuestionIndex = 0;
+    quiz.correctAnswers = 0;
+    quiz.shuffleQuestions();
+    showQuestion();
+
+  })
+
+
 
   /************  SET VISIBILITY OF VIEWS  ************/
 
