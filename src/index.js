@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const resultContainer = document.querySelector("#result");
   const restartButton = document.querySelector('#restartButton');
 
+
   
 
 
@@ -38,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
   ];
 
   /************  QUIZ INSTANCE  ************/
-  const quizDuration = 10;
+  const quizDuration = 120;
   const quiz = new Quiz(questions, quizDuration, quizDuration);
   quiz.shuffleQuestions();
 
